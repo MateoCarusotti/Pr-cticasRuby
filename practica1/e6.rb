@@ -81,3 +81,8 @@ puts tiempo_en_palabras(Time.new(2025, 10, 21, 8, 45))
 puts tiempo_en_palabras(Time.new(2025, 10, 21, 6, 58))
 
 puts tiempo_en_palabras(Time.new(2025, 10, 21, 0, 58))
+
+=begin
+no entiendo la condicion del case, automaticamente al tener una variable y rangos en los when la condicion pasa a
+ser estar dentro del rango?
+=end
