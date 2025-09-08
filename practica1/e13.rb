@@ -23,7 +23,7 @@ end
 def listar(hash)
   result = ""
   hash.each_pair.each_with_index do |(key, value), index|
-    result.concat((index + 1).to_s,'. ',key.to_s, ': ',value.to_s,'\n') #No entendi si \n queria decir \n literal o un 
+    result.concat((index + 1).to_s,". ",key.to_s, ": ",value.to_s,"\n") #No entendi si \n queria decir \n literal o un 
     #salto de linea
   end
   result

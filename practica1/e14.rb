@@ -11,7 +11,7 @@ sea el que utilice para unir los pares de clave/valor. Por ejemplo:
 def listar_mejorada(hash, pegamento = ' : ') #valor por default al ser opcional
   result = ""
   hash.each_pair.each_with_index do |(key, value), index|
-    result.concat((index + 1).to_s,'. ',key.to_s, pegamento ,value.to_s,'\n') 
+    result.concat((index + 1).to_s,". ",key.to_s, pegamento ,value.to_s,"\n") 
   end
   result
 end
