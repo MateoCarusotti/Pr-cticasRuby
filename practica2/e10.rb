@@ -16,7 +16,7 @@ ver pdf
 module Countable
 
   def Countable.include(m)
-    @count = 0
+    @count ||= 0
   end
 
   def self.count_invocations_of(sym)
@@ -26,7 +26,7 @@ module Countable
 
   def new
     puts "Holaaa"
-    @count += 1
+    @count ||= @count + 1
     sym
   end
 
