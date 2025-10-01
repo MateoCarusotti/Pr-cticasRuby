@@ -22,7 +22,7 @@ class User
   end
 
   def to_s
-    return "#{self.email} (#{self.rol.class})"
+    return "#{self.email} (#{self.rol.class})" #capaz seria mejor definir un to_s en rol
   end
 
 end
