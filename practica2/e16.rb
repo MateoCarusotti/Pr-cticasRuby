@@ -7,3 +7,12 @@ sean el resultado de invocar el Proc con cada clave del Hash original. Por ejemp
 3 # => { 1 => 'CLAVE', 'valor'=> 'OTRA_CLAVE'}
 
 =end
+
+def procesar_hash(hash, proc)
+  hash.map { |key, value| [value, proc.call(key)] }.to_h
+  
+end
+
+hash = { 'clave'=> 1, :otra_clave => 'valor'}
+
+puts procesar_hash(hash, ->(x) { x.to_s.upcase })
