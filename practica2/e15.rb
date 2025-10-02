@@ -11,16 +11,11 @@ end
 =end
 
 def da_nil?
-  if yield == nil
-    puts true
-  else
-    puts false
-  end
+  variable = yield
+  variable.nil?
 end
 
 
-da_nil? do
-  'Algo distinto de nil'
-end
+puts da_nil? {'Algo distinto de nil'}
 
-da_nil? { }
+puts da_nil? { }
